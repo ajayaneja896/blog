@@ -44,13 +44,13 @@ class CommentsController < ApplicationController
   # POST /posts/:post_id/comments.xml
   def create
     #1st you retrieve the post thanks to params[:post_id]
-    post = Post.find(params[:post_id])
+    @post = Post.find(params[:post_id])
     #2nd you create the comment with arguments in params[:comment]
-    @comment = post.comments.new(comment_params)
+    @comment = @post.comments.new(comment_params)
 
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to([@comment.post,@comment], notice: 'Comment was successfully created.') }
+        format.html { redirect_to @post, notice: 'Comment was successfully created.'}
         format.json { render :show, status: :created, location: [@comment.post,@comment]}
       else
         format.html { render :new }
