@@ -7,8 +7,117 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="lower">
+            <div id="lower-text">
+  					        <h1>inkedinsanity</h1><br>
+                    <br>
+  					        <h5>Life and other stuff!</h5>
+            </div>
+  </div>
+  <div class="all">
+    <table class="menu">
+      <tr>
+      <td class="link-home">
+        <%= link_to 'Home', posts_path %>
+      <td class="link-about">
+        <%= link_to 'About', static_about_path  %>
 
-<%= yield %>
+      </td>
+      <td class="link-contact">
+        <%= link_to 'Contact Me', new_message_path  %>
+      </td>
+      <td class="link-top-post">
+        <%= link_to 'Top posts', topposts_path %>
+    </td>
+    <% if admin? %>
+    <td class="messages">
+    <%= link_to 'Messages' ,  messages_path %>
+  </td>
+  <td class="logout">
+    <%=link_to 'logout' , session_logout_path %>
 
+  </td>
+
+    <% end %>
+  </tr>
+</table>
+    <table class="main-table">
+      <tr>
+        <td class="yeild-from-page"><%= yield %></td>
+    <td class="side-content">
+      <img src="https://secure.gravatar.com/avatar/634289eb8cb471e94381caf936421d4e?s=320">
+      <br>
+      <br>
+      <a href="http://en.gravatar.com/insanityofink"> prachisachdev</a>
+      <br>
+      <br>
+      <p>I can talk from the beginning to the end of the time. A Virgo to the core, I love beauty and hate to see the negative. I also have a weakness for fun. I can dance on anything, from hard rock to dhin-chak Bollywood numbers. I am a believer, an eager learner. Chocolate makes me go weak in the knees. I love looking at stars at night, they give me a sense of belonging. Coffee in the rain makes me feel at home. The world intrigues me. Books keep me busy. I love giving advice. And, literature and writing, equals love and life.
+      </p>
+      <br>
+      <br>
+      <br>
+      <h3>Personal links</h3>
+      <br>
+      <hr>
+      <br>
+      <%= link_to 'inkedinsanity', static_about_path %>
+      <br>
+      <br>
+      <br>
+      <h3> Follow Blog via Email</h3>
+      <br>
+      <hr>
+      <br>
+      If you'd like to be insane with me, follow me right here. Your feedback/criticism/appreciation/input is appreciated. :-)
+
+Enter your email address to follow this blog and receive notifications of new posts by Email.
+      <div class="field"><%= form_for(Follower.new) do |f| %>
+          <%= f.label :name %><br>
+          <%= f.text_field :name %><br>
+          <%= f.label :email %><br>
+          <%= f.email_field :email %><br>
+          <br>
+          <%= f.submit "Follow" %>
+          <% end %></div
+          <br>
+          <br>
+          <h1>Instagram</h1>
+           <br>
+           <br>
+           <hr>
+           <br>
+           <% @instagram.each do |instagram| %>
+
+   <a href="https://instagram.com/_prachi_sachdev_/"><%= image_tag instagram.images.low_resolution.url %></a>
+
+   <% end %>
+   <br>
+   <br>
+   <h2>Pages</h2>
+   <br>
+   <hr>
+   <br>
+   <br>
+   <%= link_to 'Home' , posts_path %>
+   <br>
+   <br>
+   <%= link_to 'About' ,static_about_url %>
+   <br>
+   <br>
+   <%= link_to 'Contact Me' ,new_message_path %>
+   <br>
+   <br>
+   <%= link_to 'Top Posts' , topposts_path %>
+
+
+
+</tr>
+</table>
+  </div>
+</div>
+<div class="devloper">
+  <div class="devloper-name"> Designed Devloped and maintained by <a href="https://github.com/ajayaneja896">Ajay Aneja</a>
+</div>
+</div>
 </body>
 </html>

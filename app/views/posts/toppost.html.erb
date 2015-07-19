@@ -1,0 +1,33 @@
+<br>
+<br>
+<br>
+<h1> Top post of the month </h1>
+<br>
+<hr>
+<br>
+<% @final1.each do |post1| %>
+<h2><%= post1.title %></h2>
+<br>
+<br>
+<hr>
+<%= truncate(post1.body , length: 100) %>
+<%= link_to 'read more' , post1 %>
+<br>
+<br>
+<% end %>
+<br>
+<br>
+<h1> Top post till date </h1>
+<br>
+<hr>
+<br>
+<% @final.each do |post| %>
+<h2><%= post.title %></h2>
+<br>
+<br>
+<hr>
+<%= truncate(post.body , length: 100) %>
+<%= link_to 'read more' , post %>
+<br>
+<br>
+<%end %>

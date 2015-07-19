@@ -1,6 +1,20 @@
 Rails.application.routes.draw do
 
 
+
+
+  resources :messages
+
+  get 'session/login'
+  get 'session/logout'
+   get 'about' => 'static#about'
+  get 'static/about'
+
+  get 'followers' => 'followers#index'
+  post 'followers' => 'followers#index'
+  post 'followers/new' => 'followers#new'
+  get 'topposts' => 'posts#toppost'
+
   resources :posts do
       resources :comments
     end
@@ -58,4 +72,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  root  'posts#index'
 end

@@ -13,3 +13,248 @@
  *= require_tree .
  *= require_self
  */
+ *{
+   margin:0px;
+   padding:0px;
+ }
+ #lower {
+ height: 200px;
+ width: 100%;
+ background-image: url(https://inkedinsanity.files.wordpress.com/2015/06/cropped-07036_hd1.jpg);
+
+ }
+ #lower-text {
+   font-family: serif,Georgia,"Times New Roman", Times ;
+   color: white;
+   padding: 25px;
+   font-style: italic;
+
+ }
+ #lower-text h1{
+   font-size:50px;
+
+ }
+
+ body {
+     margin: 0px ;
+     padding: 0px;
+
+ }
+ .all{
+   width: 85%;
+   margin-top:0px;
+   margin:auto;
+ }
+ .menu{
+   margin-top: -40px;
+   height: 50px;
+   width: 100 em;
+   background-color: #252E2E;
+   color: white;
+   width:100%;
+ }
+ .link-about{
+
+    float: left;
+    font-family: serif,Georgia,"Times New Roman", Times ;
+    font-size: 20px;
+    padding-top:15px;
+    padding-left:20px;
+
+
+ }
+ .link-about a{
+   font-family: serif,Georgia,"Times New Roman", Times ;
+   color: white;
+
+ }
+ .link-about a:visited{
+   color: white;
+ }
+ .link-about a:hover{
+   background-color:orange;
+ }
+ .logout{
+
+    float: left;
+    font-family: serif,Georgia,"Times New Roman", Times ;
+    font-size: 20px;
+    padding-top:15px;
+    padding-left:20px;
+
+
+ }
+ .logout a{
+   font-family: serif,Georgia,"Times New Roman", Times ;
+   color: white;
+
+ }
+ .logout{
+   color: white;
+ }
+ .logout a:hover{
+   background-color:orange;
+ }
+ .messages{
+
+    float: left;
+    font-family: serif,Georgia,"Times New Roman", Times ;
+    font-size: 20px;
+    padding-top:15px;
+    padding-left:20px;
+
+
+ }
+ .messages a{
+   font-family: serif,Georgia,"Times New Roman", Times ;
+   color: white;
+
+ }
+ .messages a:visited{
+   color: white;
+ }
+ .messages a:hover{
+   background-color:orange;
+ }
+ .link-home a{
+   font-family: serif,Georgia,"Times New Roman", Times ;
+   color: white;
+
+ }
+ .link-contact a:hover{
+   background-color:orange;
+ }
+ .link-top-post a:hover{
+   background-color:orange;
+ }
+ .link-home a:visited{
+   color: white;
+ }
+ .link-home a:hover{
+   background-color:orange;
+ }
+ .link-contact a{
+   font-family: serif,Georgia,"Times New Roman", Times ;
+   color: white;
+
+ }
+ .link-contact a:visited{
+   color: white;
+ }
+.link-contact{
+
+float:left;
+font-family: serif,Georgia,"Times New Roman", Times ;
+font-size: 20px;
+margin-top:15px;
+padding-left:20px;
+}
+.link-top-post{
+   float:left;
+  font-family: serif,Georgia,"Times New Roman", Times ;
+  font-size: 20px;
+  padding-top:15px;
+  padding-left:20px;
+}
+.link-home{
+   float:left;
+  font-family: serif,Georgia,"Times New Roman", Times ;
+  font-size: 20px;
+  padding-top:15px;
+  padding-left:20px;
+}
+.link-top-post a{
+  color: white;
+}
+.link-top-post a:visited{
+  color: white;
+}
+.yeild-from-page{
+
+  margin-left:10px;
+    float: left;
+  padding-left:23px;
+  background-color:white;
+  background-clip: margin-box;
+  height:100%;
+  width:63.65%;
+  background: url(back7.jpg) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+
+
+}
+#insta{
+  width: 80%;
+  margin-left: 10%;
+}
+.side-content{
+  width:27%;
+  background-color:white;
+  padding: 20px;
+  float: right;
+  margin-right: 20px;
+  padding-right: 20px;
+  background: url(back7.jpg) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+
+  border-left: 1px solid #c0c0c0;
+
+}
+.side-content a{
+  font-size: 20px;
+  color: #FF9933;
+}
+ body{
+   background-color:white;
+    /*background: url(back16.jpg) no-repeat center center fixed;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+       */
+}/*
+.new_follower{
+  width:100%
+  margin : 100px;
+
+  background-color: white;
+  background-size:cover;
+}*/
+.main-table{
+  background-color:white;
+  width:100%;
+  background: url(back7.jpg) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+
+
+
+}
+.devloper{
+  background-color:black;
+  color:blue;
+
+  padding-left: 27%;
+}
+.devloper-name{
+  margin-left:150 px;
+}
+html,body{
+  margin:0;
+  padding:0;
+}
+.field input{
+  background: url(back7.jpg) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
